@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "912ab878-eeac-4f26-a7d6-757753f9a6d6",
+		"name": "CRUD top 100 imdb movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26314416"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/movie/addNewMovie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Ultraman\",\r\n    \"year\": \"2022\",\r\n    \"runtime\": \"122\",\r\n    \"genre\": \"Action\",\r\n    \"rating\": \"9.2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movie/addNewMovie",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie",
+						"addNewMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/movie/getById?id=104",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Batman\",\r\n    \"year\": \"2012\",\r\n    \"runtime\": \"182\",\r\n    \"genre\": \"Action\",\r\n    \"rating\": \"9.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movie/getById?id=104",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie",
+						"getById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "104"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/movie/updateMovie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 105,\r\n    \"title\": \"Ultraman\",\r\n    \"year\": \"2023\",\r\n    \"runtime\": \"203\",\r\n    \"genre\": \"Drama\",\r\n    \"rating\": \"9.2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movie/updateMovie",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie",
+						"updateMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/movie/deleteMovie?id=76",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movie/deleteMovie?id=76",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie",
+						"deleteMovie"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "76"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
