@@ -1,0 +1,1 @@
+Membuat sebuah program CRUD sederhana menggunakan Framework Spring Boot. Data yang digunakan didapatkan dari data top 100 movies yang discraping menggunakan Python BeautifulSoup yang kemudian disimpan ke database MySQL.
