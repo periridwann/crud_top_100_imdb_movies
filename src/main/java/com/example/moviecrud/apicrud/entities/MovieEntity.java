@@ -14,6 +14,7 @@ public class MovieEntity {
     private String genre;
     private String rating;
 
+    //    Getter & Setter
     public int getId() {
         return id;
     }
